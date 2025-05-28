@@ -1,0 +1,10 @@
+{
+  "links": 5,
+  "model": "mistral-7b-instruct-v0.1.Q5_K_M.gguf",
+  "model-tokens": 8192,
+  "max-chunks": 400,
+  "max-tokens": 300,
+  "summarization-temp": 0.7,
+  "gpu-layers": -1,
+  "ignore-sites": ["www.reddit.com", "www.youtube.com", "old.reddit.com", "search.brave.com"]
+}
