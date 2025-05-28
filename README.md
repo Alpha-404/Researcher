@@ -18,7 +18,7 @@ Config.json explanation:
 You may also want to compile llama_cpp with gpu support for faster inference, do this by running:
 ```
 git clone https://github.com/ggerganov/llama.cpp
-cd llame.cpp
+cd llama.cpp
 CMAKE_ARGS="-DLLAMA_CUDA=on -DLLAMA_STATIC=OFF" \
 LLAMA_CPP_SRC_DIR=. \
 FORCE_CMAKE=1 \
