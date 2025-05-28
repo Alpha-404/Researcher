@@ -1,0 +1,2 @@
+playwright
+llama_cpp
