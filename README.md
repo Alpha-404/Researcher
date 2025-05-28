@@ -14,3 +14,14 @@ Config.json explanation:
   "ignore-sites": ["www.reddit.com", "www.youtube.com", "old.reddit.com", "search.brave.com"] <- These are the sites to be ignored by the bot when searching for links
 }
 ```
+
+You may also want to compile llama_cpp with gpu support for faster inference, do this by running:
+```
+git clone https://github.com/ggerganov/llama.cpp
+cd llame.cpp
+CMAKE_ARGS="-DLLAMA_CUDA=on -DLLAMA_STATIC=OFF" \
+LLAMA_CPP_SRC_DIR=. \
+FORCE_CMAKE=1 \
+pip install llama-cpp-python --no-cache-dir --force-reinstall
+```
+I suggest doing everything in a venv instead of to your system python install
