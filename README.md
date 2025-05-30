@@ -11,7 +11,8 @@ Config.json explanation:
   "max-tokens": 300, <- This is how many tokens its allowed to break each chunk into
   "summarization-temp": 0.7, <- This is how creative the bot will be in summarization, higher values means it is more likely to go off course, lower values means its going to be closer to the text
   "gpu-layers": -1, <- How many layers to run on the gpu, -1 means all layers, 0 means all layers will be on the cpu and 100 means 100 layers will run on the gpu and so on
-  "ignore-sites": ["www.reddit.com", "www.youtube.com", "old.reddit.com", "search.brave.com"] <- These are the sites to be ignored by the bot when searching for links
+  "ignore-sites": ["www.reddit.com", "www.youtube.com", "old.reddit.com", "search.brave.com"], <- These are the sites to be ignored by the bot when searching for links
+  "executable-path": "EXECUTABLE PATH HERE" <- Put the path to the executable for chromium_headless_shell here, you can also omit this in code however on my system it was unstable without it.
 }
 ```
 
