@@ -27,7 +27,7 @@ llm = Llama(
 def search(query):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True,
-                                       executable_path="/home/rajaa/.cache/ms-playwright/chromium_headless_shell-1161/chrome-linux/headless_shell")
+                                       executable_path=settings.get("executable-path"))
         global userAgents
         browser.new_context(user_agent=random.choice(userAgents))
         page = browser.new_page()
@@ -55,7 +55,7 @@ def search(query):
 def extractContent(link):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True,
-                                       executable_path="/home/rajaa/.cache/ms-playwright/chromium_headless_shell-1161/chrome-linux/headless_shell")
+                                       executable_path=settings.get("executable-path"))
         global userAgents
         browser.new_context(user_agent=random.choice(userAgents))
         page = browser.new_page()
