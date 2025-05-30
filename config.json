@@ -6,5 +6,6 @@
   "max-tokens": 300,
   "summarization-temp": 0.7,
   "gpu-layers": -1,
-  "ignore-sites": ["www.reddit.com", "www.youtube.com", "old.reddit.com", "search.brave.com"]
+  "ignore-sites": ["www.reddit.com", "www.youtube.com", "old.reddit.com", "search.brave.com"],
+  "executable-path": "EXECUTABLE PATH HERE"
 }
